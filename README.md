@@ -10,4 +10,30 @@ including how to run it.
 
 There are [resources](https://www.makeareadme.com) available to help you write a good README file.
 
+## Info
 
+- Name: Bailin An
+- Student Number: 49336771
+
+## Usage
+
+It would be better if you create a venv to run this.
+
+First, clone this repo.
+
+```bash
+git clone https://github.com/CSSE6400/2026-p1-anzai249.git
+cd 2026-p1-anzai249
+```
+
+And the install the dependencies.
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the program
+
+```bash
+flask --app todo run -p 6400
+```

@@ -24,4 +24,4 @@ allow-unsafe = false
 
 [tool.poetry.dependencies]
 python = "^3.11"
-flask
+flask = "^3.1.3"

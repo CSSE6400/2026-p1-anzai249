@@ -17,9 +17,9 @@ todos = [
 
 @bp.route('/health', methods=['GET'])
 def health_check():
-    return jsonify({"status": "healthy"}), 200
+    return jsonify({"status": "ok"}), 200
 
-@bp.route('/todos', methods=['GET'])
+@bp.route('/todos/', methods=['GET'])
 def get_todos():
     return jsonify(todos)
 
@@ -31,7 +31,7 @@ def get_todo_by_id(id):
     else:
         return jsonify({"error": "Todo not found"}), 404
 
-@bp.route('/todos', methods=['POST'])
+@bp.route('/todos/', methods=['POST'])
 def create_todo():
     new_todo = request.get_json()
     todos.append(new_todo)

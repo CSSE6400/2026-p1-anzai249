@@ -37,3 +37,10 @@ Run the program
 ```bash
 flask --app todo run -p 6400
 ```
+
+**OR** you can use poetry.
+
+```bash
+poetry install --no-root
+poetry run flask --app todo run -p 6400 &
+```

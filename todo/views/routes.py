@@ -21,13 +21,13 @@ def health_check():
 
 @bp.route('/todos', methods=['GET'])
 def get_todos():
-    return jsonify(todos)
+    return jsonify(todos), 200
 
 @bp.route('/todos/<int:id>', methods=['GET'])
 def get_todo_by_id(id):
     todo = next((todo for todo in todos if todo['id'] == id), None)
     if todo is not None:
-        return jsonify(todo)
+        return jsonify(todo), 200
     else:
         return jsonify({"error": "Todo not found"}), 404
 
